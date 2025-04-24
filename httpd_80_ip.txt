@@ -1,0 +1,20 @@
+# Main domain
+<VirtualHost *:80>
+    ServerName <www.domain.com
+    ServerAlias domain.com
+    DocumentRoot /var/www/html
+
+    <Directory "/var/www/html">
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog /var/log/httpd/<domain>_error.log
+    CustomLog /var/log/httpd/<domain>_access.log combined
+</VirtualHost>
+
+# Redirect from IP to domain
+<VirtualHost *:80>
+    ServerName <Provide the IP address>
+    Redirect permanent / http://www.devopsbatch.cloud/
+</VirtualHost>
