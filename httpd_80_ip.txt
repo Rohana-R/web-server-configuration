@@ -16,5 +16,5 @@
 # Redirect from IP to domain
 <VirtualHost *:80>
     ServerName <Provide the IP address>
-    Redirect permanent / http://www.devopsbatch.cloud/
+    Redirect permanent / http://<www.domain.cloud>/
 </VirtualHost>
