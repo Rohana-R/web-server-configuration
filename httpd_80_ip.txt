@@ -1,7 +1,7 @@
 # Main domain
 <VirtualHost *:80>
-    ServerName <www.domain.com>
-    ServerAlias domain.com
+    ServerName <www.awsdummy.co.in>
+    ServerAlias awsdummy.co.in
     DocumentRoot /var/www/html
 
     <Directory "/var/www/html">
@@ -9,12 +9,12 @@
         Require all granted
     </Directory>
 
-    ErrorLog /var/log/httpd/<domain>_error.log
-    CustomLog /var/log/httpd/<domain>_access.log combined
+    ErrorLog /var/log/httpd/<awsdummy>_error.log
+    CustomLog /var/log/httpd/<awsdummy>_access.log combined
 </VirtualHost>
 
 # Redirect from IP to domain
 <VirtualHost *:80>
-    ServerName <Provide the IP address>
-    Redirect permanent / http://<www.domain.cloud>/
+    ServerName <44.202.157.239>
+    Redirect permanent / http://<www.awsdummy.co.in>/
 </VirtualHost>
