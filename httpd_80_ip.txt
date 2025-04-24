@@ -1,6 +1,6 @@
 # Main domain
 <VirtualHost *:80>
-    ServerName <www.domain.com
+    ServerName <www.domain.com>
     ServerAlias domain.com
     DocumentRoot /var/www/html
 
